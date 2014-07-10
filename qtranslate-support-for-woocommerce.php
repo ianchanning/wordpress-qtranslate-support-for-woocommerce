@@ -97,7 +97,7 @@ function qwc_woocommerce_attribute($text) {
         return implode(', ', $values);
 }
 
-if (function_exists('qtrans_useDefaultLanguage')) {
+if (function_exists('qtrans_convertURL')) {
 	/* Fix the "add to cart" button in the product list */
 	add_filter('woocommerce_add_to_cart_url', 'qtrans_convertURL');
 	
